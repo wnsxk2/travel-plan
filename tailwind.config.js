@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-import colors from './client/tailwindcss/colors';
+import colors from './client/tailwind/colors';
 
 const px0_200 = Array.from({ length: 201 }, (_, i) => `${i}px`);
 const px0_20 = px0_200.slice(0, 21);

@@ -59,4 +59,6 @@ export default tseslint.config({
 yarn add react-router-dom@6.25
 yarn add -D tailwindcss@3.4.3 postcss@8.4.39 autoprefixer@10.4.19
 yarn tailwindcss init -p
+yarn add classnames@2.5.1
+yarn add -D vite-plugin-svgr@4.2.0
 ```
