@@ -27,6 +27,7 @@ export default function RegisterCity() {
 
   return (
     <form onSubmit={handleSubmit}>
+      <div className=''></div>
       <label htmlFor=''>
         City:
         <input type='text' name='city' />
