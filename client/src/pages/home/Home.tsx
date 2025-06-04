@@ -1,15 +1,16 @@
 import { useState } from 'react';
 import CityList from '../../components/home/CityList';
 import FilterList from '../../components/home/FilterList';
-import SearchInput from '../../components/home/SearchInput';
 import type { City } from '../../types';
+import SearchInput from '@/components/home/SearchInput';
+import NarrowLayout from '@/components/common/NarrowLayout';
 
 export default function Home() {
   //   const { data } = useQuery(/* 국가필터, 검색필터 */);
   const [search, setSearch] = useState('');
 
   return (
-    <div className='max-w-[655px] w-full mx-auto flex flex-col items-center'>
+    <NarrowLayout className='flex flex-col items-center my-30'>
       <div className='w-[399px] mb-24'>
         <SearchInput
           value={search}
@@ -22,7 +23,7 @@ export default function Home() {
       </div>
 
       <CityList cities={DUMMY_CITIES} />
-    </div>
+    </NarrowLayout>
   );
 }
 
