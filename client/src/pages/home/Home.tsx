@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import CityList from '../../components/home/CityList';
 import FilterList from '../../components/home/FilterList';
 import type { City } from '../../types';
@@ -7,16 +6,11 @@ import NarrowLayout from '@/components/common/NarrowLayout';
 
 export default function Home() {
   //   const { data } = useQuery(/* 국가필터, 검색필터 */);
-  const [search, setSearch] = useState('');
 
   return (
     <NarrowLayout className='flex flex-col items-center my-30'>
       <div className='w-[399px] mb-24'>
-        <SearchInput
-          value={search}
-          onChange={setSearch}
-          onCompositionEnd={(value) => console.log(value)}
-        />
+        <SearchInput onCompositionEnd={(value) => console.log(value)} />
       </div>
       <div className='mb-21'>
         <FilterList active='all' onChange={() => {}} />
