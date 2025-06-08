@@ -1,4 +1,4 @@
-import type { City } from '../../types';
+import type { City } from '@/types';
 import Card from './Card';
 
 interface Props {
@@ -7,13 +7,13 @@ interface Props {
 
 export default function CityList({ cities }: Props) {
   return (
-    <div className='flex flex-wrap justify-between gap-y-28'>
+    <div className='flex flex-wrap justify-between gap-y-28 items-start w-full'>
       {cities.map((city) => (
         <Card
-          key={city.city}
+          key={city.code}
           image={city.thumbnail}
-          title={city.name}
-          description={city.description}
+          title={city.nameEn.toUpperCase()}
+          description={`${city.country.name} ${city.name}`}
         />
       ))}
     </div>

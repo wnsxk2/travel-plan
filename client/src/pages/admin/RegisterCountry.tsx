@@ -1,28 +1,28 @@
 import { useRef } from 'react';
 
-export default function RegisterCity() {
+export default function RegisterCountry() {
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
-  const registerCity = async () => {
-    const city = textareaRef.current?.value;
+  const registerCountry = async () => {
+    const country = textareaRef.current?.value;
 
-    if (!city) {
+    if (!country) {
       return;
     }
 
-    const response = await fetch('/api/cities', {
+    const response = await fetch('/api/counties', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: city,
+      body: country,
     });
 
     if (response.ok) {
       textareaRef.current!.value = '';
-      alert('도시 등록되었습니다.');
+      alert('국가가 등록되었습니다.');
     } else {
-      alert(`도시 등록에 실패했습니다.`);
+      alert(`국가 등록에 실패했습니다.`);
     }
   };
   return (
@@ -30,7 +30,7 @@ export default function RegisterCity() {
       <div>
         <textarea ref={textareaRef} />
       </div>
-      <button onClick={registerCity}>등록</button>
+      <button onClick={registerCountry}>등록</button>
     </div>
   );
 }

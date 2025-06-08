@@ -1,0 +1,47 @@
+[
+  {
+    "code": "seoul",
+    "name": "서울",
+    "nameEn": "Seoul",
+    "thumbnail": "https://picsum.photos/200/300?random=1",
+    "description": "대한민국의 수도이자 경제, 문화, 기술의 중심지입니다. 전통과 현대가 공존하는 매력적인 도시입니다.",
+    "timezone": "Asia/Seoul",
+    "flightHour": 0,
+    "timezoneOffset": 9,
+    "coordinates": {
+      "lat": 37.5665,
+      "lng": 126.978
+    },
+    "country": "KR"
+  },
+  {
+    "code": "paris",
+    "name": "파리",
+    "nameEn": "Paris",
+    "thumbnail": "https://picsum.photos/200/300?random=2",
+    "description": "세계적인 예술과 패션의 도시이자 에펠탑과 루브르 박물관으로 유명한 프랑스의 수도입니다.",
+    "timezone": "Europe/Paris",
+    "flightHour": 12,
+    "timezoneOffset": 1,
+    "coordinates": {
+      "lat": 48.8566,
+      "lng": 2.3522
+    },
+    "country": "FR"
+  },
+  {
+    "code": "newyork",
+    "name": "뉴욕",
+    "nameEn": "New York",
+    "thumbnail": "https://picsum.photos/200/300?random=3",
+    "description": "미국을 대표하는 도시로, 금융, 예술, 문화의 중심지이며 타임스퀘어와 센트럴 파크로 유명합니다.",
+    "timezone": "America/New_York",
+    "flightHour": 14,
+    "timezoneOffset": -5,
+    "coordinates": {
+      "lat": 40.7128,
+      "lng": -74.006
+    },
+    "country": "US"
+  }
+]

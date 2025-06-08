@@ -1,0 +1,3 @@
+{"code":"US","name":"미국","nameEn":"United States","voltage":"120V / 60Hz","visa":{"required":true,"duration":90},"continent":"North America","_id":"AVsPEtELb9ygJUCU"}
+{"code":"KR","name":"대한민국","nameEn":"South Korea","voltage":"220V / 60Hz","visa":{"required":false,"duration":90},"continent":"Asia","_id":"NdlTDR0rOoYAeQNd"}
+{"code":"FR","name":"프랑스","nameEn":"France","voltage":"230V / 50Hz","visa":{"required":true,"duration":90},"continent":"Europe","_id":"lV25o6AOzCqymoFx"}
